@@ -1,0 +1,52 @@
+.precalc-practice-question, .precalc-quiz-question {
+  width : 80%;
+  padding : 5%;
+  border : 4px double #26aa30;
+  border-radius : 10px;
+  margin : 0 auto;
+  background-color: rgba(240,240,240,.3);
+}
+
+.practice-solution {
+  width : 80%;
+  padding : 5%;
+  border : 4px double #92d497;
+  border-radius : 10px;
+  margin : 0 auto;
+  background-color: rgba(240,240,240,.3);
+}
+
+.quiz-results {
+  width : 35%;
+  padding : 5%;
+//  border : 4px double #92d497;
+//  border-radius : 10px;
+  margin : 0 auto;
+//  background-color: rgba(240,240,240,.3);
+}
+#precalc-quiz-results-box {
+  text-align: center;
+  width: 75%;
+  padding: 2%;
+  border : 4px double #92d497;
+  border-radius : 10px;
+  margin : 0 auto;
+//  background-color: rgba(240,240,240,.2);
+  color: #26aa30;
+  font-size: 20pt;
+}
+
+.hidden {
+  display : none;
+}
+.visible {
+  display : block;
+}
+
+.next-question {
+  margin: 0 auto;
+}
+
+.modal-math {
+  background-color: white;
+}

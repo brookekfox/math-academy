@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MathAcademy</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+		<!--favicon-->
+		<link rel="icon"
+					type="image/png"
+					href="assets/knot.png">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+				"HTML-CSS": {availableFonts: ["TeX"]}
+			});
+			MathJax.Hub.Queue(function () {
+    		document.getElementById("step").disabled = false;
+  		});
+		</script>
+
+		<script type="text/javascript"
+						src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
+		</script>
+
+		<style>
+			@font-face {
+				font-family: 'MJX_Math';
+				src: url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); /* IE9 Compat Modes */
+				src: url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot?iefix') format('eot'),
+				url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff')  format('woff'),
+				url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf')  format('opentype'),
+				url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/svg/MathJax_Math-Italic.svg#MathJax_Math-Italic') format('svg');
+			}
+			@font-face {
+				font-family: 'MJX_Main';
+				src: url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); /* IE9 Compat Modes */
+				src: url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot?iefix') format('eot'),
+				url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff')  format('woff'),
+				url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf')  format('opentype'),
+				url('http://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS/TeX/svg/MathJax_Main-Regular.svg#MathJax_Main-Regular') format('svg');
+			}
+			.mjxi {
+				font-family: MJX_Math;
+				font-size: 131%;
+				line-height: .8em;
+			}
+			.mjx {
+				font-family: MJX_Main;
+				font-size: 131%;
+				line-height: .8em;
+			}
+		</style>
+
+
+		<%= javascript_include_tag 'application' %>
+		<%= javascript_include_tag 'practice_solution' %>
+		<%= javascript_include_tag 'step_button' %>
+		<%= javascript_include_tag 'quiz_buttons' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <%= yield %>
+
+  </body>
+</html>
